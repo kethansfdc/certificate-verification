@@ -1,1 +1,4 @@
-
+assets/
+├── logo.png          ← Your astronaut logo
+├── CHANDHINIP.pdf    ← Your certificate PDF
+├── SMI70482.png      ← QR code image
