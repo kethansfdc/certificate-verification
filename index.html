@@ -1,4 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slash Mark IT Solutions - Certificate Verification</title>
+<link rel="stylesheet" href="style.css">
+</head>
 
-<footer style="text-align:center;margin-top:30px;color:#666;padding:20px;">
-    © 2026 Slash Mark IT Solutions. All Rights Reserved.
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<img src="assets/logo.png" class="logo" alt="Logo">
+
+<h1>Slash Mark IT Solutions</h1>
+
+<h2>Certificate Verification Portal</h2>
+
+<p style="text-align:center;margin-bottom:25px;">
+Enter your <b>Intern ID</b> to verify your certificate.
+</p>
+
+<div style="text-align:center;">
+
+<input
+type="text"
+id="internId"
+placeholder="Enter Intern ID (Example: SMI70482)">
+
+<br>
+
+<button onclick="verifyCertificate()">
+Verify Certificate
+</button>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 Slash Mark IT Solutions. All Rights Reserved.
 </footer>
+
+</div>
+
+<script>
+
+function verifyCertificate(){
+
+const id=document
+.getElementById("internId")
+.value
+.trim();
+
+if(id===""){
+
+alert("Please enter your Intern ID");
+
+return;
+
+}
+
+window.location.href=
+"verify.html?id="+encodeURIComponent(id);
+
+}
+
+</script>
+
+</body>
+</html>
