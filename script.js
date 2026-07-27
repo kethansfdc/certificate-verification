@@ -58,8 +58,11 @@ async function loadCertificate() {
         document.getElementById("refId").textContent =
             certificate.reference;
 
-        document.getElementById("certificateLink").href =
+        document.getElementById("viewCertificateLink").href =
             certificate.certificate;
+
+        document.getElementById("downloadCertificateLink").href =
+             certificate.certificate;
 
     } catch (error) {
 
