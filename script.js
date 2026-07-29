@@ -21,7 +21,7 @@ async function loadCertificate() {
             document.querySelector(".card").innerHTML = `
                 <img src="assets/logo.png" class="logo">
 
-                <h1>Slash Mark IT Solutions</h1>
+                <h1>Cognifyz Technologies</h1>
 
                 <h2 style="color:red">
                     Certificate Not Found
